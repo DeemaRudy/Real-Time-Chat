@@ -1,0 +1,135 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# User-specific files (Windows)
+*.aps
+*.ncb
+*.suo
+*.sln.docstates
+*.swp
+*.wixproj
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Aa][Rr][Mm]32/
+[Aa][Rr][Mm]Config/
+[Aa][Rr][Mm]u/
+[Aa][Rr][Mm]p/
+[Aa][Rr][Mm]s/
+[Aa][Rr][Mm]c/
+[Aa][Rr][Mm]t/
+[Aa][Rr][Mm]a/
+[Aa][Rr][Mm]b/
+[Aa][Rr][Mm]d/
+[Aa][Rr][Mm]x/
+[Aa][Rr][Mm]b/
+bin/
+obj/
+build/
+publish/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nupkg.metadata
+*.nupkg.deps.json
+*.nupkg.config
+*.nupkg.rsa
+*.nupkg.p7s
+*.nupkg.xml
+
+# Azure Pipelines
+.vsts/
+.azure/
+*.azure
+*.deployment/
+*.vs/
+.vsconfig/
+.project/
+*.nupkg/
+
+# Rider
+.idea/
+
+# Log files
+*.log
+
+# Environment files
+.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+*.env.local
+.envrc
+
+# Ignore IDE specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ncb
+*.suo
+*.aps
+
+# Ignore build output directories
+[Bb]uild/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Aa][Rr][Mm]32/
+[Aa][Rr][Mm]Config/
+[Aa][Rr][Mm]u/
+[Aa][Rr][Mm]p/
+[Aa][Rr][Mm]s/
+[Aa][Rr][Mm]c/
+[Aa][Rr][Mm]t/
+[Aa][Rr][Mm]a/
+[Aa][Rr][Mm]b/
+[Aa][Rr][Mm]d/
+[Aa][Rr][Mm]x/
+[Aa][Rr][Mm]b/
+bin/
+obj/
+build/
+publish/
+
+# Ignore package and dependency files
+*.nupkg
+*.snupkg
+*.nupkg.metadata
+*.nupkg.deps.json
+*.nupkg.config
+*.nupkg.rsa
+*.nupkg.p7s
+*.nupkg.xml
+
+# Ignore temporary files
+*.log
+*.tmp
+*.temp
+
+azureConnection.json
