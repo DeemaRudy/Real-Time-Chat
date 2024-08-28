@@ -2,17 +2,8 @@
 
 var connection = new signalR.HubConnectionBuilder().withUrl("/realTimeChatHub").build();
 
-//Disable the send button until connection is established.
 document.getElementById("sendButton").disabled = true;
 
-//connection.on("ReceiveMessage", function (user, message) {
-//    var li = document.createElement("li");
-//    document.getElementById("messagesList").appendChild(li);
-//    // We can assign user-supplied strings to an element's textContent because it
-//    // is not interpreted as markup. If you're assigning in any other way, you
-//    // should be aware of possible script injection concerns.
-//    li.textContent = `${user} says ${message}`;
-//});
 connection.on("ReceiveMessage", (user, message) => addMessageToMessageList(user, message));
 
 connection.start().then(function () {
@@ -37,8 +28,7 @@ loadRecords();
 function loadRecords() {
     fetch('Chat/GetLastTenRecords')
         .then(response => {
-            if (response.status === 204) { // Якщо немає контенту
-                //document.getElementById('messagesList').innerHTML = 'No records found.';
+            if (response.status === 204) {
                 return null;
             }
             return response.json();
@@ -46,8 +36,6 @@ function loadRecords() {
         .then(data => {
             console.log(data);
             if (data) {
-                let container = document.getElementById('messagesList');
-                container.innerHTML = ''; // Очищуємо контейнер перед додаванням нових записів
                 data.forEach(record => {
                     addMessageToMessageList(record.userName, record.message);
                 });
